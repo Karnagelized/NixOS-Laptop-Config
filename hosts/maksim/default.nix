@@ -2,10 +2,10 @@
 {
   imports = [
     # Конфиги
-    ../../laptop/configs/git.config.nix
-    ../../laptop/configs/zsh.config.nix
-    ../../laptop/configs/fastfetch.config.nix
-    ../../laptop/configs/gnome-binds.config.nix
+    ../../configs/git.config.nix
+    ../../configs/zsh.config.nix
+    ../../configs/fastfetch.config.nix
+    ../../configs/gnome-binds.config.nix
   ];
 
   home.stateVersion = "25.11";
