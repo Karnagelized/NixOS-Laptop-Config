@@ -13,6 +13,44 @@
 
 [//]: # (TODO Обновить архитектуру)
 ```
+NixOS-Laptop-Config/
+├── common/
+│   ├── bluetooth.nix
+│   ├── docker.nix
+│   ├── fonts.nix
+│   ├── hardware-configuration.nix
+│   ├── libs.nix
+│   ├── location.nix
+│   ├── network.nix
+│   ├── nix.nix
+│   ├── printing.nix
+│   ├── services.nix
+│   └── sound.nix
+├── configs/
+│   ├── fastfetch.config.nix
+│   ├── git.config.nix
+│   ├── gnome-binds.config.nix
+│   └── zsh.config.nix
+├── exports/
+│   └── p10k.zsh
+├── hosts/
+│   ├── maksim/
+│   │   └── default.nix
+│   └── root/
+│       └── default.nix
+├── images/
+│   └── background.jpg
+├── modules/
+│   ├── gnome.nix
+│   ├── hardware.nix
+│   ├── keyboard.nix
+│   └── packages.nix
+├── sounds/
+│   ├── ModernMinimal/
+│   └── ModernMinimalOriginal/
+├── README.md
+├── flake.lock
+└── flake.nix
 
 ```
 
@@ -24,6 +62,7 @@
 * `bluetooth.nix` - Модуль настройки блютуза 
 * `docker.nix` - Модуль настройки докера
 * `fonts.nix` - Модуль настройки шрифтов
+* `hardware-configuration.nix` - Конфигурация разметки дисков
 * `libs.nix` - Модуль настройки библиотек
 * `location.nix` - Модуль настройки местоположения
 * `network.nix` - Модуль настройки параметров сети
@@ -31,6 +70,15 @@
 * `printing.nix` - Модуль настройки печати
 * `services.nix` - Модуль настройки сервисов (FlatPak)
 * `sound.nix` - Модуль настройки звуков
+
+`configs:`
+* `fastfetch.config.nix` - Конфигурация fastfetch
+* `git.config.nix` - Конфигурация Git
+* `gnome-binds.config.nix` - Бинды для GNOME оболочки
+* `zsh.config.nix` - Конфигурация zsh
+
+`exports:`
+* `p10k.zsh` - Конфигурация плагина p10k
 
 `hosts/maksim:`
 * `default.nix` - Пользовательские настройки для Laptop профиля с DE GNOME
@@ -41,6 +89,15 @@
 `images:`
 * `background.jpg` - Фотография на задний фон рабочего экрана
 
+`modules:`
+* `gnome.nix` - Модуль настройки GNOME окружения 
+* `hardware.nix` - Модуль настройки графики/железа
+* `keyboard.nix` - Модуль настройки клавиатуры
+* `packages.nix` - Модуль настройки установленных пакетов
+
+`sounds:`
+* `ModernMinimal` - переделанные под себя кастомные звуки системы  
+* `ModernMinimalOriginal` - оригинальные звуки системы  
 
 # Установка NixOS
 ## Шаг 1 - `Создание образа NixOS`
