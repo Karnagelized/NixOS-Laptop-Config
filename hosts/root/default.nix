@@ -2,7 +2,6 @@
 {
   imports =
     [
-      # TODO Добавить актуальную разметку дисков для ноутбука
       # Монтирование дисков
       ../../common/hardware-configuration.nix
 
