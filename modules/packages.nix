@@ -16,6 +16,7 @@ let
   	obsidian
   	postman
     telegram-desktop
+    jetbrains.pycharm
   	onlyoffice-desktopeditors
   	# Приложения для работы с паролями
   	authenticator
