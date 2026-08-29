@@ -11,8 +11,6 @@ let
 
   # Пакеты программ
   programsPackages = with pkgs; [
-    # Терминал
-    kitty
   	zed-editor
   	filezilla
   	obsidian
@@ -73,6 +71,15 @@ let
     # Архиватор/Разорхиватор
     unzip
     atool
+    # === Улучшение терминала === #
+    # Красивый вывод папок
+    eza
+    # Интерактивное подключение по SSH
+    lazyssh
+    # Поисковик содержимого
+    ripgrep
+    # Превью кода
+    bat
   ];
 
   # Расширения
@@ -124,6 +131,9 @@ in {
 
   # Отключение предустановленных пакетов Gnome
   environment.gnome.excludePackages = with pkgs; [
+    # Терминал
+    gnome-terminal
+    gnome-console
     # Экскурсии
     gnome-tour
     # Контакты
