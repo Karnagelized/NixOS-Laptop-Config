@@ -11,6 +11,8 @@ let
 
   # Пакеты программ
   programsPackages = with pkgs; [
+    # Терминал
+    kitty
   	zed-editor
   	filezilla
   	obsidian
@@ -31,6 +33,10 @@ let
   	zoom-us
     # Клиент для Samsung Buds
     galaxy-buds-client
+    # Аналог paint
+    pinta
+    # Аналог фотошоп
+    krita
   ];
 
   # Пакеты для работы с БД
@@ -50,8 +56,6 @@ let
    	wget
     # Настройки рабочего окружения
     gnome-tweaks
-    # Настройки экрана входа GNOME
-    gdm-settings
     # Состояние железа в консоли
     btop
     # Статистика по USB устройствам
