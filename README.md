@@ -27,8 +27,10 @@ NixOS-Laptop-Config/
 │   └── sound.nix
 ├── configs/
 │   ├── fastfetch.config.nix
+│   ├── fzf.config.nix
 │   ├── git.config.nix
 │   ├── gnome-binds.config.nix
+│   ├── kitty.config.nix
 │   └── zsh.config.nix
 ├── exports/
 │   └── p10k.zsh
@@ -37,8 +39,6 @@ NixOS-Laptop-Config/
 │   │   └── default.nix
 │   └── root/
 │       └── default.nix
-├── images/
-│   └── background.jpg
 ├── modules/
 │   ├── gnome.nix
 │   ├── hardware.nix
@@ -46,20 +46,19 @@ NixOS-Laptop-Config/
 │   └── packages.nix
 ├── sounds/
 │   ├── ModernMinimal/
+│   │   └── ...
 │   └── ModernMinimalOriginal/
+│       └── ...
 ├── README.md
 ├── flake.lock
 └── flake.nix
-
 ```
 
 `/:`
-
 * `flake.nix` - точка входа flake конфигурации
 * `flake.lock` - сохранения зависимостей flake сборок
 
 `common:`
-
 * `bluetooth.nix` - Модуль настройки блютуза
 * `docker.nix` - Модуль настройки докера
 * `fonts.nix` - Модуль настройки шрифтов
@@ -73,37 +72,29 @@ NixOS-Laptop-Config/
 * `sound.nix` - Модуль настройки звуков
 
 `configs:`
-
 * `fastfetch.config.nix` - Конфигурация fastfetch
+* `fzf.config.nix` - Конфигурация fzf для поиска файлов в терминале
 * `git.config.nix` - Конфигурация Git
 * `gnome-binds.config.nix` - Бинды для GNOME оболочки
+* `kitty.config.nix` - Конфигурация kitty терминала
 * `zsh.config.nix` - Конфигурация zsh
 
 `exports:`
-
 * `p10k.zsh` - Конфигурация плагина p10k
 
 `hosts/maksim:`
-
 * `default.nix` - Пользовательские настройки для Laptop профиля с DE GNOME
 
 `hosts/root:`
-
 * `default.nix` - Системные настройки для Laptop профиля с DE GNOME
 
-`images:`
-
-* `background.jpg` - Фотография на задний фон рабочего экрана
-
 `modules:`
-
 * `gnome.nix` - Модуль настройки GNOME окружения
 * `hardware.nix` - Модуль настройки графики/железа
 * `keyboard.nix` - Модуль настройки клавиатуры
 * `packages.nix` - Модуль настройки установленных пакетов
 
 `sounds:`
-
 * `ModernMinimal` - переделанные под себя кастомные звуки системы
 * `ModernMinimalOriginal` - оригинальные звуки системы
 
