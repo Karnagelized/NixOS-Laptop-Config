@@ -110,8 +110,6 @@ let
     gnomeExtensions.desktop-clock
     # Вынес аудио настроек в меню
     gnomeExtensions.quick-settings-audio-panel
-    # Убирает уведомление "Окно готово"
-    gnomeExtensions.grand-theft-focus
     # Добавляет пользовательские темы
     gnomeExtensions.user-themes
   ];
