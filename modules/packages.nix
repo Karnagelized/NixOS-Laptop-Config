@@ -9,6 +9,12 @@ let
     nordzy-cursor-theme
   ];
 
+  # Для учебы
+  studyPackages = with pkgs; [
+    rstudio
+    libreoffice-fresh
+  ];
+
   # Пакеты программ
   programsPackages = with pkgs; [
   	zed-editor
@@ -126,6 +132,7 @@ in {
   # Слияние всех пакетов в одно окружение
   environment.systemPackages =
     themeAndIcon
+    ++ studyPackages
     ++ programsPackages
     ++ databasePackages
     ++ utilsPackages
