@@ -113,8 +113,6 @@ let
     gnomeExtensions.burn-my-windows
     # Нечеткий поиск приложений
     gnomeExtensions.fuzzy-application-search
-    # Добавляет в левый верхний угол иконку с меню
-    gnomeExtensions.logo-menu
     # Color Picker
     gnomeExtensions.color-picker
     # Виджеты
