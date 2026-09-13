@@ -66,7 +66,7 @@ let
     # Настройки рабочего окружения
     gnome-tweaks
     # Состояние железа в консоли
-    btop
+    (btop.override { cudaSupport = true; })
     # Статистика по USB устройствам
     usbutils
     codex
