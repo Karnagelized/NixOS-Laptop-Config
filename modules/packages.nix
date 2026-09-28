@@ -22,8 +22,7 @@ let
   	obsidian
   	postman
     jetbrains.pycharm
-  	# Отключен из-за учебного пакета libreoffice-fresh
-  	# onlyoffice-desktopeditors
+  	onlyoffice-desktopeditors
   	# Приложения для работы с паролями
   	authenticator
   	# Переводчик
