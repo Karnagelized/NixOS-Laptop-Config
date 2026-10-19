@@ -14,6 +14,11 @@ let
     (pkgs.rstudioWrapper.override {
       packages = with pkgs.rPackages; [
         summarytools
+        pastecs
+        psych
+        stargazer
+        ggplot2
+        dplyr
       ];
     })
     libreoffice-fresh
