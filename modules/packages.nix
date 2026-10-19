@@ -11,7 +11,11 @@ let
 
   # Для учебы
   studyPackages = with pkgs; [
-    rstudio
+    (pkgs.rstudioWrapper.override {
+      packages = with pkgs.rPackages; [
+        summarytools
+      ];
+    })
     libreoffice-fresh
   ];
 
