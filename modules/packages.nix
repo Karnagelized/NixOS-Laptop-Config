@@ -19,6 +19,8 @@ let
         stargazer
         ggplot2
         dplyr
+        Hmisc
+        GGally
       ];
     })
     libreoffice-fresh
