@@ -90,6 +90,7 @@ let
   	python313Packages.pip
   	# NodeJS
   	elmPackages.nodejs
+  	nest-cli
     # Lofi Музыка
     lowfi
     # Архиватор/Разорхиватор
