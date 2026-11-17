@@ -9,6 +9,11 @@
     # Нестабильная ветка пакетов (Unstable)
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+    happ-nix = {
+      url = "github:d4hl/happ-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,7 +23,7 @@
     nix-gc-env.url = "github:Julow/nix-gc-env";
 	};
 
-	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, home-manager, nix-gc-env, ... }:
+	outputs = { nixpkgs, nixpkgs-stable, nixpkgs-unstable, home-manager, nix-gc-env, happ-nix, ... }:
     let
       system = "x86_64-linux";
     in {
