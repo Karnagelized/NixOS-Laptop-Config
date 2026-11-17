@@ -35,8 +35,6 @@ let
   	onlyoffice-desktopeditors
   	# Приложения для работы с паролями
   	authenticator
-  	# Переводчик
-  	dialect
   	# Извлечение текста со скрина
   	normcap
   	# Торрент
