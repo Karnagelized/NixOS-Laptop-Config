@@ -47,6 +47,8 @@
         modules = [
           ./hosts/root/default.nix
 
+          happ-nix.nixosModules.default
+
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
